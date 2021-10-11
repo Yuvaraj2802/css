@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        body {
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        .topnav {
+
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .topnav a:active {
+            background-color: black;
+            color: white;
+
+        }
+
+        table,
+        th,
+        td {
+            border: 3px solid black;
+            border-collapse: collapse;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center; background-color:darkred; color: beige;" id="top">HTML</h1>
+    <div id="sticky"></div>
+
+    <div class="topnav">
+        <a class="active" href="#textformat">text format</a>
+        <a href="#quote">html quotation</a>
+        <a href="#links">html links</a>
+        <a href="#image">html image</a>
+        <a href="#tables">html tables</a>
+        <a href="#unord">unordered</a>
+        <a href="#iframe">Iframe</a>
+        <a href="#forms">html forms</a>
+        <a href="#video">media</a>
+
+    </div>
+
+
+
+
+    <h2 id="textformat" class="mar">text <br>format</h2>
+    <pre>
+                <b>bold text</b>
+                <strong>strong text</strong>
+                <em>emphasized</em>
+                <mark>marked text</mark>
+                <small>small text</small>
+                <big>biggest text</big>
+                text was <del>deleted</del> <ins>inserted</ins>
+                H <sub>2</sub>o water component
+                (a+b) <sup>2</sup>=a <sup>2</sup>+b <sup>2</sup> mathamatical function
+
+            </pre>
+    <a href="#top">back to top</a>
+    <h2 id="quote" class="mar">HTML <br>quotation</h2>
+    <p>
+        Here is a quote from wwf's website:
+    </p>
+
+    <blockquote>
+        For nearly 60 years, WWF has been protecting the future of nature. The world's leading conservation
+        organization, WWF works in 100 countries and is supported by more than one million members in the United States
+        and close to five million globally.
+    </blockquote>
+
+    <p>
+        WWF's goal is to:<q> "Build a future where people live in harmony with nature.</q><abbr
+            title="world health organization">WHO</abbr> was founded in 1948
+    </p>
+
+    <p>
+        <i>
+            <address>
+                prasanth.R<br>
+                valayakadu street<br>
+                orthanadu<br>
+                thanjavur-(DT)<br>
+            </address>
+        </i>
+    </p>
+
+    <p>
+        <i>citatiom</i> defines a title of a work
+    </p>
+
+
+    <a href="#top">back to top</a>
+
+    <h2 id="links" class="mar">HTML <br> links</h2>
+
+    <p>
+        <a href="https://www.instagram.com/" target="_blank">instagram</a>
+        <button
+            onclick="document.location=('https: //www.googleadservices.com/pagead/aclk?sa=L&amp;ai=DChcSEwiWk7DQ2-jsAhXMfSsKHbbND0QYABAAGgJzZg&amp;ae=2&amp;ohost=www.google.com&amp;cid=CAASE-RoelJvZNhOKYDtOYywPlzWcn4&amp;sig=AOD64_29zf_o5n9YdGE_d3vgFXA9PI1SRQ&amp;q&amp;adurl&amp;ved=2ahUKEwiQy6rQ2-jsAhX4FLcAHZNMBokQ0Qx6BAgIEAE')"
+            target="_blank">facebook</button>
+    </p>
+
+    <a href="#top">back to top</a>
+    <div>
+
+        <h2 id="image" class="mar">HTML <br>images</h2>
+        <a style="display: block;margin-right: 236px;text-align: right;"></a>
+
+        <img src="kl rahul.jpg" alt="kl rahul with jack">
+
+        <a href="#top"><br><br>back to top</a>
+    </div>
+
+    <h2 class="mar" id="bimg">background image</h2>
+
+    <div style="background-image: url(army.jpg);">
+
+        <p style="clear: both;"> Connect With Your Friends Online. Join the Facebook Community - Free! Share Your
+            Memories. Find Friends. Plan Events. Follow Interesting Topicsb. Connect With Old Friends. Stay In Touch
+            With
+            Family. Play Games With Friends. Share Photos. Chat Online.Connect With Your Friends Online. Join the
+            Facebook Community - Free! Share Your Memories. Find Friends. Plan Events. Follow Interesting Topics.
+            Connect With Old Friends. Stay In Touch With Family. Play Games With Friends. Share Photos. Chat
+            Online.Connect With Your Friends Online. Join the Facebook Community - Free! Share Your Memories. Find
+            Friends. Plan Events. Follow Interesting Topics. Connect With Old Friends. Stay In Touch With Family. Play
+            Games With Friends. Share Photos. Chat Online.</p>
+    </div>
+    <br>
+    <br>
+    </div>
+
+    <a href="#top">back to top</a>
+
+    <h2 id="tables" class="mar">HTML <br> tables</h2>
+
+    <caption>
+        <table>
+
+            <tbody>
+                <tr>
+                    <th rowspan="2">days</th>
+                    <th colspan="5">time</th>
+
+
+                </tr>
+                <tr>
+                    <th>08:00-09:00</th>
+                    <th>09:00-10:00</th>
+                    <th>11:00-12:00</th>
+                    <th>12:00-01:00</th>
+                    <th>01:00-02:00</th>
+
+
+                </tr>
+                <tr>
+                    <th>Monday</th>
+                    <td>Tamil</td>
+                    <td>English</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                    <td>Social</td>
+                </tr>
+                <tr>
+                    <th>Tuesday</th>
+                    <td>Tamil</td>
+                    <td>English</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                    <td>Social</td>
+                </tr>
+                <tr>
+                    <th>Wednesday</th>
+                    <td>Tamil</td>
+                    <td>English</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                    <td>Social</td>
+                </tr>
+                <tr>
+                    <th>Thursday</th>
+                    <td>Tamil</td>
+                    <td>English</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                    <td>Social</td>
+                </tr>
+                <tr>
+                    <th>Friday</th>
+                    <td>Tamil</td>
+                    <td>English</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                    <td>Social</td>
+                </tr>
+                <tr>
+                    <th>Saturday</th>
+                    <td>Tamil</td>
+                    <td>English</td>
+                    <td>Maths</td>
+                    <td>Science</td>
+                    <td>Social</td>
+            </tbody>
+        </table>
+    </caption>
+
+    <h2 id="unord" class="mar">unordered <br>list</h2>
+
+    <ol>
+        <tr>
+            <li>2 onions</li>
+            <li>1/2 cup vegetable oil</li>
+            <li>1/4 cup vegetable oil</li>
+            <li>1 tablespoon ginger garlic paste minced ginger and garlic</li>
+            <li>1 tablespoon red chilli powder sub with 1 teaspoon paprika + teaspoon cayenne</li>
+            <li>1 teaspoon turmeric powder</li>
+            <li>1 teaspoon garam masala powder</li>
+        </tr>
+    </ol>
+
+    <a href="#top">back to top</a>
+
+    <h2 id="Iframe" class="mar">Iframe</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nCNqPgXDYhY" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    <br>
+    <br>
+    <a href="#top">back to top</a>
+    <br>
+    <h2 id="forms" class="mar">HTML <br>forms</h2>
+
+    <form action="/action_page.php">
+        <label for="fname"><br>first name</label><br>
+        <input type="text" id="fname" name="fname" placeholder="first name"><br>
+        <label for="lname"><br>last name</label><br>
+        <input type="text" id="lname" name="lname" placeholder="last name">
+        <br>
+        <br>
+        <label for="DOB">D-O-B</label><br>
+        <input type="date" id="dob" name="dob" placeholder="dob">
+        <br>
+        <br>
+        <label for="email">E-MAIL</label><br>
+        <input type="text" id="Email" name="E-mail" placeholder="E-mail"><br>
+        <br>
+        <br>
+        <label for="browsers">which browser are you used to fill the <br>from:</label>
+        <input list="browsers" name="browsers">
+        <br>
+        <br>
+
+        <datalist id="browsers">
+            <option value="chrome"></option>
+            <option value="edge"></option>
+            <option value="firefox"></option>
+            <option value="operamini"></option>
+            <option value="ucbrowser"></option>
+        </datalist>
+        <br>
+        <br>
+
+        <input type="submit" value="submit" onclick="alert('thank you for your submission')">
+        <button type="reset" value="reset">reset</button>
+
+
+    </form>
+    <br>
+    <br>
+    <a href="#top">back to top</a>
+    <br>
+    <br>
+
+    <h2 id="video" class="mar">video</h2>
+
+
+    <div>
+        <video width="320" height="240" controls>
+            <source src="Soorarai Pottru.mp4">
+        </video>
+    </div>
+    <br>
+    <br>
+</body>
+
